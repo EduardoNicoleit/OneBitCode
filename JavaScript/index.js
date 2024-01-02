@@ -1,7 +1,13 @@
-if (6 !== 6)    {
-    console.log("Verdadeiro")
+const age = prompt("What's your Age:")
+
+if (age > 18)    {
+    alert (
+        "You're on Legal Age!"
+    )
 }
 
 else {
-    console.log("Falso")
+    alert (
+        "You're Under Age!"
+    )
 }
