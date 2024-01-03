@@ -1,7 +1,13 @@
 let speed = 80
 
-while (velocidade > 0) {
-    alert ("O carro está a " + velocidade + " km/h")
-    velocidade -= 20
+while (speed > 0) {
+    alert ("O carro está a " + speed + " km/h")
+    speed -= 20
     alert("Diminuindo 20 km/h")
+
+    if (speed === 40) {
+        break
+    }
 }
+
+alert ("O carro esta a " + speed + " km/h")
