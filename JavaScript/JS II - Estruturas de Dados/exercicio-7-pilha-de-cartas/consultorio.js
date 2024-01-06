@@ -12,4 +12,20 @@ do {
         "\nEscolha uma ação: \n'. Novo Paciente\n2. Consultar paciente\n3. Sair"
     )
 
+    switch (opcao) {
+        case "1":
+            const novoPaciente = prompt("Qual o nome do Paciente?")
+            fila.push(novoPaciente)
+            break
+        case "2":
+            const pacienteConsultado = fila.shift()
+            alert(pacienteConsultado + "foi removido da fila")
+            break
+        case "3":
+            alert("Encerrando...")
+            break
+        default:
+            alert("Opção invalida!")    
+    }
+
 } while(opcao !== "3")
