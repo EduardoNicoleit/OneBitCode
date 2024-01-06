@@ -11,6 +11,12 @@ do {
             const novaCarta = prompt("Qual é a carta?")
             baralho.push(novaCarta)
         case "2":
+            const cartaPuxada = baralho.pop()
+            if (!cartaPuxada) {
+                alert("Não há nenhuma carta no baralho")
+            } else {
+                alert("Você puxou um(a) " + cartaPuxada)
+            }
         case "3":
             alert("Saindo...")
             break
