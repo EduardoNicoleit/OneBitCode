@@ -9,7 +9,7 @@ do {
 
     opcao = prompt(
         "Pacientes: \n" + pacientes +
-        "\nEscolha uma ação: \n'. Novo Paciente\n2. Consultar paciente\n3. Sair"
+        "\nEscolha uma ação: \n1. Novo Paciente\n2. Consultar paciente\n3. Sair"
     )
 
     switch (opcao) {
