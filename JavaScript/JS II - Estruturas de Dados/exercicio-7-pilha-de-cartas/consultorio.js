@@ -19,7 +19,7 @@ do {
             break
         case "2":
             const pacienteConsultado = fila.shift()
-            alert(pacienteConsultado + "foi removido da fila")
+            alert(pacienteConsultado + " foi removido da fila")
             break
         case "3":
             alert("Encerrando...")
