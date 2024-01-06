@@ -10,6 +10,7 @@ do {
         case "1":
             const novaCarta = prompt("Qual é a carta?")
             baralho.push(novaCarta)
+            break
         case "2":
             const cartaPuxada = baralho.pop()
             if (!cartaPuxada) {
