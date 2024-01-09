@@ -15,9 +15,9 @@ do {
             imovel.proprietario = prompt("Informe o nome do proprietário do imóvel:")
             imovel.quartos = prompt("Quantos quartos possui o imóvel?")
             imovel.banheiros = prompt("Quantos banheiros possui o imóvel?")
-            imovel.garagem = prompt("O Imóvel possui garagem? (Sim/Não")
+            imovel.garagem = prompt("O Imóvel possui garagem? (Sim/Não)")
 
-            const confirm = confirm(
+            const confirmacao = confirm(
                 "Salvar este imóvel?\n" +
                 "\nProprietário: " + imovel.proprietario +
                 "\nQuartos: " + imovel.quartos +
@@ -25,17 +25,20 @@ do {
                 "\nGaragem: " + imovel.garagem
             )
 
-            if (confirm) {
+            if (confirmacao) {
                 imoveis.push(imovel)
+                alert("Imóvel Cadastrado!")
+            } else {
+                alert("Voltando ao menu...")
             }
 
             break            
         case "2":
             for (let i = 0; i < imoveis.length; i++) {
                 alert (
-                    "Imovel " + (i + 1) +
+                    "Imóvel: " + (i + 1) +
                     "\nProprietário: " + imoveis[i].proprietario +
-                    "\nQuartos: " + imoveis[1].quartos +
+                    "\nQuartos: " + imoveis[i].quartos +
                     "\nBanheiros: " + imoveis[i].banheiros +
                     "\nGaragem: " + imoveis[i].garagem
                 )
