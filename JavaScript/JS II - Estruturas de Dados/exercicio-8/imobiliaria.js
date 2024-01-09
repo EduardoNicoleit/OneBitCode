@@ -15,10 +15,16 @@ do {
             imovel.proprietario = prompt("Informe o nome do proprietário do imóvel:")
             imovel.quartos = prompt("Quantos quartos possui o imóvel?")
             imovel.banheiros = prompt("Quantos banheiros possui o imóvel?")
-            imovel.garagemm = prompt("O Imóvel possui garagem? (Sim/Não")
+            imovel.garagem = prompt("O Imóvel possui garagem? (Sim/Não")
 
-            const confirm = confirm()
-            
+            const confirm = confirm(
+                "Salvar este imóvel?\n" +
+                "\nProprietário: " + imovel.proprietario +
+                "\nQuartos: " + imovel.quartos +
+                "\nBanheiros: " + imovel.banheiros +
+                "\nGaragem: " + imovel.garagem
+            )
+
         case "2":
         case "3":
             alert("Encerrando...")
