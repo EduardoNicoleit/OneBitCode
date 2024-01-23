@@ -50,7 +50,6 @@ addTechBtn.addEventListener('click', function (ev) {
       stackInputs.removeChild(newRow)
     })
   
-  
     newRow.append(
       techNameLabel, techNameInput, expLabel, expRadio1, expLabel1, expRadio2, expLabel2, expRadio3, expLabel3, removeRowBtn
     )
