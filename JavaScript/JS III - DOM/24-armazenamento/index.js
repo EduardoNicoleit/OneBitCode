@@ -48,4 +48,4 @@ document.getElementById('sessionBtn').addEventListener('click', function () {
     console.log(document.cookie)
   })
 
-  /////
+  
