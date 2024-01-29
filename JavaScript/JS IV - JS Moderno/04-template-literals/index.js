@@ -1,6 +1,6 @@
-const name = 'Isaac'
+const nome = 'Isaac'
 
-console.log(`Olá, ${name}!
+console.log(`Olá, ${nome}!
 Estamos em ${Date()}
   2 + 2 = ${2 + 2}
 `)
