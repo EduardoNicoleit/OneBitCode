@@ -1,4 +1,4 @@
-import { Component } from "/Component.js"
+import { Component } from "./Component.js"
 import { Form } from "./Form.js"
 import { Input } from "./Input.js"
 import { Label } from "./Label.js"
@@ -15,7 +15,6 @@ const label = new Label('Nome:', form, { htmlFor: 'nameInput' })
 const input = new Input(form, { id: 'nameInput', name: 'birthday' })
 
 form.render()
-
 label.render()
 form.addChildren(input)
 
