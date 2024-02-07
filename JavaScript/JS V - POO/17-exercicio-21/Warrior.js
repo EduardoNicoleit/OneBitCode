@@ -21,3 +21,5 @@ class Warrior extends Character {
         }
     }
 }
+
+module.exports = Warrior
