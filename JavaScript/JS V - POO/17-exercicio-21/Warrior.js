@@ -14,8 +14,10 @@ class Warrior extends Character {
     switchStance() {
         if (this.stance === 'attacking') {
             this.stance ='defending'
+            this.defensePts += this.shieldPts
         } else {
             this.stance = 'attacking'
+            this.defensePts -= this.shieldPts
         }
     }
 }
