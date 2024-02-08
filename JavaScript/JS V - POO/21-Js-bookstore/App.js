@@ -27,5 +27,17 @@ module.exports = class App {
         App.#database.saveBook(book)
     }
 
+    addBook(bookName, quantity) {
+        App.#database.addBooksToStock(bookName, quantity)
+    }
     
+    createPoster(name, description, height, width, price, inStock) {
+        const poster = new Poster(name, description, height, width, price, inStock)
+        App.#database.savePoster(poster)
+    }
+
+    addPoster(posterName, quantity) {
+        App.#database.addPostersToStock(posterName, quantity)
+    }
+
 }
