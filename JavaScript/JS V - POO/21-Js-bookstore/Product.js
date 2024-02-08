@@ -5,4 +5,12 @@ module.exports = class Product {
         this.price = price
         this.inStock = inStock
     }
+
+    addToStock(quantity) {
+        this.inStock += quantity
+    }
+
+    removeFromStock(quantity) {
+        this.inStock -= quantity
+    }
 }
