@@ -55,4 +55,11 @@ module.exports = class App {
         })
     }
 
+    getOrders () {
+        return App.#database.find('orders')
+    }
+
+    showData() {
+        App.#database.showStorage()
+    }
 }
