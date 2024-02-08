@@ -35,28 +35,44 @@ module.exports = class Database {
         const book = this.findBookByName(bookName)
         book?.removeBooksFromStock(quantity)
     }
-}
 
-//////////////////////////
+    findPosterByName(posterName) {
+    return this.#storage.posters.find(p => p.name === posterName)
+    }
 
-findPosterByName(posterName) {
-    return this.#storage.posters.find(p => p.name === posterNameName)
-}
-
-savePoster(poster) {
+    savePoster(poster) {
     const posterExists = this.findPosterByName(poster.name)
     if (!posterExists) [
-        this.#storage.posters.push(poster)
+        this.#storage.poster.push(poster)
     ]
-}
+    }
 
-addBooksToStock(bookName, quantity) {
-    const book = this.findBookByName(bookName)
-    book?.addBookToStock(quantity)
-}
+    addPostersToStock(posterName, quantity) {
+    const poster = this.findPosterByName(posterName)
+    poster?.addPosterToStock(quantity)
+    }
 
-removeBooksFromStock(bookName, quantity) {
-    const book = this.findBookByName(bookName)
-    book?.removeBooksFromStock(quantity)
-}
+    removePosterFromStock(posterName, quantity) {
+    const poster = this.findPosterByName(posterName)
+    poster?.removePosterFromStock(quantity)
+    }
+
+    saveUser(user) {
+        const userExists = this.#storage.users.find(u => u.email === user.email)
+        if (!userExists) {
+            this.#storage.users.push(user)
+        }
+    }
+
+    saveOrder(order) {
+        this.#storage.orders.push(order)
+    }
+
+    showStorage() {
+        console.table(this.#storage.authors)
+        console.table(this.#storage.books)
+        console.table(this.#storage.posters)
+        console.table(this.#storage.users)
+        console.table(this.#storage.orders.map => order.data)
+    }
 }
