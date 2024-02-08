@@ -13,7 +13,7 @@ module.exports = class App {
     }
     
     getUsers() {
-        App.#database.find('users')
+       return App.#database.find('users')
     }
 
     createAuthor(name, nationality, bio) {
@@ -33,6 +33,10 @@ module.exports = class App {
     addBook(bookName, quantity) {
         App.#database.addBooksToStock(bookName, quantity)
     }
+
+    getBooks() {
+        return App.#database.find('books')
+    }
     
     createPoster(name, description, height, width, price, inStock) {
         const poster = new Poster(name, description, height, width, price, inStock)
@@ -41,6 +45,10 @@ module.exports = class App {
 
     addPoster(posterName, quantity) {
         App.#database.addPostersToStock(posterName, quantity)
+    }
+
+    getPosters() {
+        return App.#database.find('posters')
     }
 
     createOrder(items, user) {
