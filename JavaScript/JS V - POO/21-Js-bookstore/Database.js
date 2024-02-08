@@ -36,3 +36,27 @@ module.exports = class Database {
         book?.removeBooksFromStock(quantity)
     }
 }
+
+//////////////////////////
+
+findPosterByName(posterName) {
+    return this.#storage.posters.find(p => p.name === posterNameName)
+}
+
+savePoster(poster) {
+    const posterExists = this.findPosterByName(poster.name)
+    if (!posterExists) [
+        this.#storage.posters.push(poster)
+    ]
+}
+
+addBooksToStock(bookName, quantity) {
+    const book = this.findBookByName(bookName)
+    book?.addBookToStock(quantity)
+}
+
+removeBooksFromStock(bookName, quantity) {
+    const book = this.findBookByName(bookName)
+    book?.removeBooksFromStock(quantity)
+}
+}
