@@ -19,6 +19,13 @@ module.exports = class App {
     }
 
     getAuthor() {
-        
+        return App.#database.find('authors')
     }
+
+    createBook(title, synopsis, genre, pages, author, description, price, inStock) {
+        const book = new Book(title, synopsis, genre, pages, author, description, price, inStock)
+        App.#database.saveBook(book)
+    }
+
+    
 }
