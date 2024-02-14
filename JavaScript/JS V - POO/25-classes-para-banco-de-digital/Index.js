@@ -19,3 +19,4 @@ console.log(App.findUser("juliana@email.com"))
 console.log(App.findUser("juliana@email.com").account)
 console.log(App.findUser("juliana@email.com").account.loans[0].installments)
 
+//
