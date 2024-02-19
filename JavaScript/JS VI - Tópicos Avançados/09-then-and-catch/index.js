@@ -19,3 +19,11 @@ p.then((result) => {
 }).catch((err) => {
     console.log(`A promise foi rejeitada! Motivo: ${err}`)
 })
+
+// ...
+
+execute().then((result) => {
+    console.log(`A promise foi resolvida. O resultado foi: ${result}`)
+}).catch((err) => {
+    console.log(`A promise foi rejeitada! Motivo: ${err}`)
+})
