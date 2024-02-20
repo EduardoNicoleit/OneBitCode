@@ -13,3 +13,7 @@ function waitFor(seconds) {
       return number * number
   })
   console.log(squares)
+
+    Promise.all(squares)).then(results => {
+        console.log(results)
+    })
