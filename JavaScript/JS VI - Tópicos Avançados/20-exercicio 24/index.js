@@ -23,7 +23,7 @@ async function imc(weight, height) {
     }
   }
 
-  showImc(71, 1.74)
+showImc(71, 1.74)
 showImc(48, 1.60)
 showImc(71, "texto")
 showImc(82, 1.72)
