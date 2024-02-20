@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "jason-server": "^3.0.0"
+    "jason-server": "^3.0.0",
+    "json-server": "^1.0.0-alpha.23"
   }
 }
