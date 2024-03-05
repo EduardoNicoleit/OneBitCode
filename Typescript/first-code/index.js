@@ -26,3 +26,6 @@ sendSpaceship(spaceshipName, spaceshipCaptain);
 var currentShip = sendSpaceship(spaceshipName, spaceshipCaptain);
 var speed = Number(prompt('Insira a velocidade para a qual deseja acelerar:'));
 accelerate(speed, currentShip);
+
+
+///
